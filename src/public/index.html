@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background:#95e6f5; font-weight:bold; padding:15px; border:3px solid #1c19b3; margin-right:70%; margin-bottom:40px; border-radius:10px;">
+        <h1>Formulario de ingreso </h1>
+        <div>
+            <h5>Nombre</h5>
+            <input type="text" id="title"> </div>
+        <div>
+            <h5>Precio</h5> 
+            <input type="text" id="price"> </div>
+        <div> 
+            <h5>Foto URL</h5>
+            <input type="text" id="thumbnail"> 
+        </div>
+        <button id="Guardar" style="background-color:rgb(26, 182, 26); margin-top:15px;">Guardar</button>
+        <br></br>
+        <table id="tabla" style=" width: 100%; border-spacing: 10px; border: 1px solid black;">
+            <tr style="border: 1px solid black;">
+              <th style="border: 1px solid black;padding: 10px;">Nombre</th>
+              <th style="border: 1px solid black;padding: 10px;">Precio</th>
+              <th style="border: 1px solid black;padding: 10px;">Foto</th>
+            </tr>   
+        </table>
+    </div>
+    <div style="background:#95e6f5; font-weight:bold; padding:15px; border:3px solid #1c19b3; margin-right:70%; margin-bottom:40px; border-radius:10px;">
+        <h1>Chat de Usuarios </h1>
+        <h5>Ingresar mail </h5>
+        <div>
+            <input type="text" id="mail">
+        </div>
+        <hr></hr>
+        <p id="log"></p>
+        <div>
+            <input type="text" id="chatBox"> <button id="Enviar" >Enviar</button>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="index.js"></script>
+    
+</body>
+</html>
